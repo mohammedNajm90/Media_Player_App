@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    app:layoutDescription="@xml/activity_main_scene">
+    <ImageView
+        android:id="@+id/myVideo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_myVideo"
+        android:scaleType="fitXY"
+        android:src="@drawable/media" />
+
+    <ImageView
+        android:id="@+id/playIcon"
+        android:layout_width="@dimen/icon_length"
+        android:layout_height="@dimen/icon_length"
+        android:src="@drawable/ic_baseline_play_arrow_24"
+        app:layout_constraintBottom_toBottomOf="@+id/myVideo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/videoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_video_text"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/padding_All"
+        android:text="@string/text_Value"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size"
+        app:layout_constraintTop_toBottomOf="@+id/myVideo"
+        app:layout_constraintStart_toStartOf="@id/myVideo" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

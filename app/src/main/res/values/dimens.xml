@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="icon_length">48dp</dimen>
+    <dimen name="height_video_text">64dp</dimen>
+    <dimen name="padding_All">8dp</dimen>
+    <dimen name="font_size">12sp</dimen>
+    <dimen name="height_myVideo">256dp</dimen>
+</resources>
